@@ -1,0 +1,2 @@
+Just some metadata handling here. You will need to create directories, files and a symbolic link with commands.
+The symbolic link need a special parameter when modifying his timestamp.
