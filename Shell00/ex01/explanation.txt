@@ -34,3 +34,5 @@ We are gonna see each element of the metadata :
             the easiest command is "touch", you can have a look on the internet to find the options and the format of the timestamp.
     
     Finally the file name.
+
+After that you need to run the command "tar -c testShell00.tar testShell00" as the subject asks you to do.
