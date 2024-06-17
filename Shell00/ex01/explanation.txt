@@ -1,0 +1,36 @@
+This exercice has for aim to teach you how to understand and custom the file "metadata" such as permissions, date...
+
+When you run the "ls -l" command, it lists the file presents in the directory you are in (this is the "ls" command) with the metadata of each files (this is the "-l" option).
+
+We are gonna see each element of the metadata :
+
+    The very first dash is to indicate the file type : - (ordinary file) / d (directory) / ... you can find the list on internet.
+
+    After that, we have 9 elements (-, r, w or x). They are the file permissions, these elements has to be seperated in 3 groups when we read them :
+        - First 3 elements so first group : represents the user permissions
+        - Second group : represents the group (user group) permissions
+        - Third group : represents others (everyone) permissions
+
+        " - " means you have no permission on the file.
+        " r " means you have a read permission on the file.
+        " w " means you have a write permission permission on the file.
+        " x " means you have an execution permission on the file.
+
+        so in the subject the file permissions should be like this :
+            - read permission for the user
+            - read and execution permission for the group
+            - read and execution permission for others
+
+    Then we have the number "1", who represents every link to the file. For ordinary files, it's common to see only one link (themselves), but for directories the number can go up fast.
+
+    Then we have the owner name.
+
+    Then we have the owner group.
+
+    Then we have the size of the file in octet. So you will have to find a way to make the file heavier.
+
+    Then we have the last modification date of the file.
+        Of course you can update it with a command :
+            the easiest command is "touch", you can have a look on the internet to find the options and the format of the timestamp.
+    
+    Finally the file name.

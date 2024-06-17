@@ -1,0 +1,3 @@
+Just create a file named "z" and write "Z" in it.
+
+The command "cat" allows you read and return the content of a file in the terminal.
