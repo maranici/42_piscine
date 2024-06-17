@@ -4,7 +4,7 @@ When you run the "ls -l" command, it lists the file presents in the directory yo
 
 We are gonna see each element of the metadata :
 
-    The very first dash is to indicate the file type : - (ordinary file) / d (directory) / ... you can find the list on internet.
+    The very first dash is to indicate the file type : - (ordinary file) / d (directory) / l (symbolic link) / ... you can find the list on internet.
 
     After that, we have 9 elements (-, r, w or x). They are the file permissions, these elements has to be seperated in 3 groups when we read them :
         - First 3 elements so first group : represents the user permissions
