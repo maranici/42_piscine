@@ -1,0 +1,6 @@
+This exercise works a little with git commands. 
+Git commits are the messages that we write to describe the change made to the repo before pushing.
+
+The exercise asks us to find the id of the last 5 commits in a bash file.
+
+You will need to create a .sh script. to insert the command to find the ids.

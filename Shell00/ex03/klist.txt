@@ -1,0 +1,5 @@
+Credentials cache: API:XXXXXX-XXXXXX-XXXXXXX-XXXXXXX
+        Principal: xxxxxxxx@xxxxxxxxx.xx
+
+  Issued                Expires               Principal
+XXXXXXXXXXX          XXXXXXXXXXXXX              xxxxxx/xx.xx@xx.xx

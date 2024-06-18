@@ -1,0 +1,6 @@
+The goal of this exercise is to practice using the diff command in Unix/Linux to compare two text files. 
+By creating two similar files, a and b, with slight differences in their content, we can utilize diff to generate a file, sw.diff, that highlights these differences. 
+This process is useful for tracking changes, debugging, and version control in software development.
+
+In this specific example, we create two versions of a text from "Star Wars." The diff command outputs the changes needed to transform file a into file b, showing which lines were added, removed, or altered. 
+This helps understand how to identify and document differences between file versions efficiently.
