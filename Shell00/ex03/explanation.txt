@@ -1,0 +1,6 @@
+What is Kerberos ? 
+    Kerberos is an authentication protocol. It allows mutual authentication between a client and a server using secret keys and tickets.
+
+    Several commands are used with Kerberos :
+        -klist : lists every Kerberos ticket.
+        -kinit : creates a Kerberos ticket.
