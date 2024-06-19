@@ -1,0 +1,7 @@
+The command id -Gn $FT_USER | tr ' ' ',' | tr -d '\n' performs the following actions:
+
+    id -Gn $FT_USER: Lists all group names the user $FT_USER belongs to.
+    tr ' ' ',': Replaces spaces between the group names with commas.
+    tr -d '\n': Removes the newline character at the end of the output.
+
+In summary, this command outputs a comma-separated list of groups that the specified user belongs to, without any trailing newline.

@@ -1,0 +1,7 @@
+The purpose of this exercise is to find all files ending with ".sh" in the current directory and its subdirectories, then display their names without the ".sh" extension. This helps in listing script files in a cleaner format.
+
+The command used is:
+find . -type f -name '*.sh' -exec basename {} .sh \;
+
+This command searches for all files with the ".sh" extension and uses basename to strip the extension, displaying only the file names.
+We need the ';' at the end for the -exec parameter.
