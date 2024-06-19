@@ -1,0 +1,6 @@
+To solve this exercise, you need to create a magic file named ft_magic that can detect files containing the string "42" at the 42nd byte.
+
+    - 42 specifies the byte offset to start checking (42nd byte).
+    - string specifies the type of data to check at that offset.
+    - 42 is the string value to match.
+    - 42 file is the description of the file type when the condition is met.

@@ -1,0 +1,11 @@
+The purpose of this exercise is to search for and delete certain temporary or backup files within the current directory and all its subdirectories. These files typically have names that either end with a tilde (~) or start and end with a hash (#). The command find is used to locate these files, and then it both displays and deletes them in a single operation.
+
+In the command find . -type f -name '*~' -o -name '#*#' -print -delete, several options and arguments are used:
+
+    . specifies the current directory as the starting point for the search.
+    -type f restricts the search to regular files.
+    -name '*~' searches for files ending with a tilde (~).
+    -o is a logical OR operator, allowing for an alternative search criterion.
+    -name '#*#' searches for files that start and end with a hash (#).
+    -print displays the found files.
+    -delete removes the found files.
