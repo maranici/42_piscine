@@ -1,36 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: macuesta <macuesta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/20 17:52:51 by macuesta          #+#    #+#             */
-/*   Updated: 2024/06/20 17:52:51 by macuesta         ###   ########.fr       */
+/*   Created: 2024/06/20 17:53:10 by macuesta          #+#    #+#             */
+/*   Updated: 2024/06/20 18:08:40 by macuesta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "unistd.h"
 
-void	ft_is_negative(int n)
+void	ft_putchar(char c)
 {
-	if (n < 0)
+	write(1, &c, 1);
+}
+
+void	ft_putnbr(int nb)
+{
+	if (nb == -2147483647)
 	{
-		write(1, "N", 1);
+		write(1, "-2147483647", 11);
+	}
+	else if (nb < 0)
+	{
+		ft_putchar('-');
+		ft_putnbr(nb * -1);
+	}
+	else if (nb >= 10)
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
 	}
 	else
 	{
-		write(1, "P", 1);
+		ft_putchar(nb + '0');
 	}
 }
 
 // #include "stdlib.h"
 // #include "stdio.h"
-// int main(int ac, char **av){
-//     if (ac == 2) {
-//         ft_is_negative(atoi(av[1]));
-//     }
-//     else {
-//         printf("%s", "Please enter one argument.");
-//     }
+// int	main(int ac, char **av)
+// {
+// 	if (ac == 2)
+// 	{
+// 		ft_putnbr(atoi(av[1]));
+// 	}
+// 	else
+// 	{
+// 		printf("%s", "Please enter one argument.");
+// 	}
 // }

@@ -1,0 +1,20 @@
+#include "unistd.h":
+
+    Includes the unistd.h header file, which provides access to the POSIX API, including the write function.
+
+void ft_putchar(char c):
+
+    Writes a single character c to the standard output using write.
+
+void printer(int number):
+
+    Prints a two-digit number.
+    If number is 10 or greater, it calculates the tens (digit1) and units (digit2) digits, then prints them.
+    If number is less than 10, it prints a leading '0' followed by the number.
+
+void ft_print_comb2(void):
+
+    Prints all combinations of two different two-digit numbers in ascending order, separated by a comma and space.
+    Uses two nested while loops to generate combinations where i < j.
+    Calls printer(i) and printer(j) to print each pair.
+    Adds a comma and space after each pair except the last one (i = 98 and j = 99).

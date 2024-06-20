@@ -1,0 +1,29 @@
+#include "unistd.h":
+
+    This line includes the unistd.h header file, which provides access to the POSIX operating system API, including the write function used in this code.
+
+void ft_print_alphabet(void):
+
+    This defines a function named ft_print_alphabet that takes no parameters.
+    The void keyword in the parameter list indicates that the function does not take any arguments.
+    The void keyword before the function name indicates that the function does not return any value.
+
+char c;:
+
+    This declares a variable c of type char. This variable will be used to hold and print each character of the alphabet.
+
+c = 'a';:
+
+    This initializes the variable c with the character 'a', the starting character of the alphabet.
+
+while (c <= 'z'):
+
+    This begins a while loop that will continue to execute as long as c is less than or equal to 'z', the last character of the alphabet.
+    Inside the loop:
+        write(1, &c, 1);:
+            The write function is called to output the character c.
+            1 is the file descriptor for standard output (stdout), meaning the character will be written to the terminal.
+            &c is the address of the character c. This is necessary because write expects a pointer to the data to be written.
+            The last 1 specifies the number of bytes to write, which in this case is one byte (the size of a char).
+        c++;:
+            This increments the character c to the next character in the ASCII sequence.

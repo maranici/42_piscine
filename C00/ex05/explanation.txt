@@ -1,0 +1,25 @@
+#include "unistd.h":
+
+    Includes the unistd.h header file, which provides access to the POSIX API, including the write function.
+
+void printer(char i, char j, char k):
+
+    This helper function takes three characters i, j, and k.
+    It writes each character to the standard output.
+    If i is not '7', it writes ", " to the standard output.
+
+void ft_print_comb(void):
+
+    Defines a function named ft_print_comb that takes no arguments.
+    This function prints all unique combinations of three different digits in ascending order.
+
+Variables i, j, k:
+
+    i ranges from '0' to '7'.
+    j ranges from i + 1 to '8'.
+    k ranges from j + 1 to '9'.
+
+Loop Structure:
+
+    The nested while loops ensure that i, j, and k form unique combinations where i < j < k.
+    printer(i, j, k) is called for each valid combination.

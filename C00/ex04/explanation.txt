@@ -1,0 +1,8 @@
+if (n < 0):
+
+    Checks if n is less than 0.
+    If true, it writes the character 'N' to the standard output using write.
+
+else:
+
+    If n is not less than 0, it writes the character 'P' to the standard output using write.

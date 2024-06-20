@@ -1,0 +1,15 @@
+#include "unistd.h":
+
+    This line includes the unistd.h header file, which provides access to the POSIX operating system API, including the write function used in this code.
+
+void ft_putchar(char c):
+
+    This defines a function named ft_putchar that takes a single parameter, c, of type char.
+    The void keyword indicates that this function does not return any value.
+
+write(1, &c, 1);:
+
+    The write function is called to output the character c.
+    1 is the file descriptor for standard output (stdout), meaning the character will be written to the terminal.
+    &c is the address of the character c. This is necessary because write expects a pointer to the data to be written.
+    The last 1 specifies the number of bytes to write, which in this case is one byte (the size of a char).

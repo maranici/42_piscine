@@ -1,0 +1,1 @@
+It's the same principle as ex01 but for numbers.

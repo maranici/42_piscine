@@ -1,0 +1,40 @@
+#include "unistd.h":
+
+    Includes the unistd.h header file, which provides access to the POSIX API, including the write function.
+
+void ft_putchar(char c):
+
+    This function takes a single character c as an argument.
+    It writes the character c to the standard output using the write function.
+
+void ft_putnbr(int nb):
+
+    This function takes an integer nb as an argument.
+    It prints the integer to the standard output.
+
+Base Case:
+
+    if (nb == -2147483647):
+        Checks if the integer is -2147483647, a special case for the minimum value of a signed 32-bit integer.
+        Directly writes the string "-2147483647" to the output.
+
+Negative Numbers:
+
+    else if (nb < 0):
+        Checks if nb is negative.
+        Writes the negative sign '-' to the output.
+        Calls ft_putnbr recursively with the positive equivalent of nb (nb * -1).
+
+Recursive Case:
+
+    else if (nb >= 10):
+        Checks if nb is 10 or greater.
+        Calls ft_putnbr recursively with nb / 10 to handle the higher-order digits.
+        Calls ft_putnbr recursively with nb % 10 to handle the lowest-order digit.
+        This breaks down the number into individual digits.
+
+Single Digit:
+
+    else:
+        Handles single-digit numbers (0-9).
+        Converts the digit to its corresponding character by adding '0' and writes it to the output using ft_putchar.
