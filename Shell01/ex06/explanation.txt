@@ -1,0 +1,3 @@
+ls -l: Lists files and directories with details.
+|: Pipe, redirects the output of ls -l to the next command.
+awk 'NR==1 || NR%2==1': Uses awk to print lines where the line number (NR) is odd (NR%2==1).

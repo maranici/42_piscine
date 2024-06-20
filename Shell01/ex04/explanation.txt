@@ -1,0 +1,6 @@
+This command extracts MAC addresses from the network interfaces list.
+
+    ifconfig -a: Lists all network interfaces.
+    grep ether: Filters lines containing "ether" (MAC addresses).
+    sed 's/ether//g': Removes the word "ether".
+    sed 's/[[:space:]]//g': Removes all spaces.

@@ -1,0 +1,10 @@
+This command creates a file named "\?$*'MaRViN'*$?\" and writes "42" into it.
+
+    echo "42": Outputs the string "42".
+    > '"\?$*'\''MaRViN'\''*$?\"': Redirects the output to a file named "\?$*'MaRViN'*$?\".
+
+Quotation usage:
+
+    '...': Outer single quotes for the entire filename.
+    '\'': Escapes single quotes within the filename.
+    \": Escapes double quotes within the filename.

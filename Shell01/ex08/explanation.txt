@@ -1,0 +1,18 @@
+echo "ibase=5;obase=D;$(echo "$FT_NBR1+$FT_NBR2" | tr \' 0 | tr \\ 1 | tr \" 2 | tr \? 3 | tr \! 4 | tr mrdoc 01234)":
+    Sets the input base (ibase) to 5 and output base (obase) to D for bc.
+    $(echo "$FT_NBR1+$FT_NBR2" | tr \' 0 | tr \\ 1 | tr \" 2 | tr \? 3 | tr \! 4 | tr mrdoc 01234): Substitutes variables FT_NBR1 and FT_NBR2 into the expression and translates characters from custom bases to digits (tr commands).
+
+bc:
+    Performs the arithmetic calculation based on the converted expression (ibase=5;obase=D;).
+
+tr 0123456789ABC 'gtaio luSnemf':
+    Translates digits and letters from the output of bc into the custom base 'gtaio luSnemf'.
+
+Breakdown of tr Commands:
+
+    tr \' 0: Replaces single quote (') with 0.
+    tr \\ 1: Replaces backslash (\) with 1.
+    tr \" 2: Replaces double quote (") with 2.
+    tr \? 3: Replaces question mark (?) with 3.
+    tr \! 4: Replaces exclamation mark (!) with 4.
+    tr mrdoc 01234: Replaces characters according to their corresponding digit values (m=0, r=1, d=2, o=3, c=4).
