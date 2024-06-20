@@ -6,7 +6,7 @@
 /*   By: macuesta <macuesta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 17:52:29 by macuesta          #+#    #+#             */
-/*   Updated: 2024/06/20 17:52:32 by macuesta         ###   ########.fr       */
+/*   Updated: 2024/06/20 19:16:07 by macuesta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ void	ft_putchar(char c)
 // 		ft_putchar(*av[1]);
 // 	}
 // 	else {
-// 		printf("%s", "Please enter one argument.");
+// 		printf("Please enter one argument.");
 // 	}
 // }

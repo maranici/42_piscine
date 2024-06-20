@@ -6,7 +6,7 @@
 /*   By: macuesta <macuesta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 17:53:10 by macuesta          #+#    #+#             */
-/*   Updated: 2024/06/20 18:08:40 by macuesta         ###   ########.fr       */
+/*   Updated: 2024/06/20 19:16:07 by macuesta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,6 @@ void	ft_putnbr(int nb)
 // 	}
 // 	else
 // 	{
-// 		printf("%s", "Please enter one argument.");
+// 		printf("Please enter one argument.");
 // 	}
 // }
