@@ -1,0 +1,4 @@
+In the function ft_strncmp, we compare the strings s1 and s2 up to n characters.
+While both s1 and s2 point to the same character and n is greater than 0, we increment the pointers and decrement n.
+When the characters differ or n reaches 0, we return the difference between the ASCII values of the characters pointed to by s1 and s2.
+This difference is cast to int to ensure correct comparison results.
