@@ -1,0 +1,26 @@
+The ft_fibonacci function calculates the Fibonacci number at a given index using recursion. The Fibonacci sequence is defined such that each number is the sum of the two preceding ones, starting from 0 and 1.
+
+    Base Cases:
+        If index is less than 0, the function returns -1, indicating an invalid index.
+        If index is 0 or 1, the function returns index, as the Fibonacci sequence starts with 0 and 1.
+
+    Recursive Case:
+        For any other value of index, the function returns the sum of the Fibonacci numbers at index - 2 and index - 1.
+        This means the function calls itself twice for each value of index, gradually breaking down the problem until it reaches the base cases.
+
+How Recursion Works
+
+Recursion is a process where a function calls itself to solve smaller instances of the same problem. Here’s how it works in ft_fibonacci:
+
+    For index = 3, the function returns ft_fibonacci(1) + ft_fibonacci(2).
+    For index = 2, the function returns ft_fibonacci(0) + ft_fibonacci(1).
+    The base cases return 1 for index = 1 and 0 for index = 0.
+
+Each recursive call waits for the result of the next call. Once the base cases are reached, the results are returned back up the call stack:
+
+    ft_fibonacci(0) returns 0.
+    ft_fibonacci(1) returns 1.
+    ft_fibonacci(2) returns 0 + 1 which is 1.
+    ft_fibonacci(3) returns 1 + 1 which is 2.
+
+So, the final result for ft_fibonacci(3) is 2.

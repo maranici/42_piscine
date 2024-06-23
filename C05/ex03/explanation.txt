@@ -1,0 +1,25 @@
+The ft_recursive_power function calculates the result of raising a number nb to a given power power using recursion.
+
+    Base Cases:
+        If nb is 0 or power is 0, the function returns 1. This handles the special case where any number raised to the power of 0 is 1, and 0 raised to any power is considered 1 here.
+        If power is 1, the function returns nb, as any number raised to the power of 1 is the number itself.
+
+    Recursive Case:
+        For any other value of power, the function returns nb multiplied by the result of ft_recursive_power(nb, power - 1).
+        This means the function calls itself with power - 1 and continues to do so, reducing the value of power each time, until it reaches the base case.
+
+How Recursion Works
+
+Recursion is a process where a function calls itself to solve smaller instances of the same problem. Here’s how it works in ft_recursive_power:
+
+    For nb = 2 and power = 3, the function returns 2 * ft_recursive_power(2, 2).
+    For nb = 2 and power = 2, the function returns 2 * ft_recursive_power(2, 1).
+    For nb = 2 and power = 1, the function returns 2 (base case).
+
+Each recursive call waits for the result of the next call. Once the base case is reached, the results are returned back up the call stack:
+
+    ft_recursive_power(2, 1) returns 2.
+    ft_recursive_power(2, 2) returns 2 * 2 which is 4.
+    ft_recursive_power(2, 3) returns 2 * 4 which is 8.
+
+So, the final result for ft_recursive_power(2, 3) is 8.
