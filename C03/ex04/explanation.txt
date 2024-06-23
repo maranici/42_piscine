@@ -1,0 +1,10 @@
+The ft_strstr function searches for the first occurrence of the substring to_find within the string str.
+
+    If to_find is an empty string, the function immediately returns str.
+    The function iterates through str using an index i.
+    For each position in str, it compares the substring starting from str[i] with to_find character by character using another index j.
+    If the characters match, it keeps track of the starting position with a pointer ptr.
+    If the entire to_find string is found within str, it returns the pointer ptr to the first occurrence.
+    If no match is found, the function returns 0.
+
+This function effectively implements a simple substring search.

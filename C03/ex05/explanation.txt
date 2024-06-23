@@ -1,0 +1,8 @@
+The ft_strlcat function appends the string src to the end of the string dest, ensuring that the total length of the resulting string does not exceed size characters, including the null terminator. It returns the total length of the string it tried to create, which is the initial length of dest plus the length of src.
+
+    First, it calculates the length of dest using the ft_strlen function.
+    If size is less than or equal to the length of dest, it returns the length of src plus size.
+    Otherwise, it appends characters from src to dest until either all characters of src are appended or the total length reaches size - 1.
+    Finally, it null-terminates the dest string and returns the combined length of the original dest and src.
+
+This function ensures that the resulting string in dest is properly null-terminated and does not overflow the specified buffer size.

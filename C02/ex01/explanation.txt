@@ -1,0 +1,3 @@
+The ft_strcpy function copies the string from src to dest. 
+It iterates through each character in src, copying it to the corresponding position in dest, until it encounters the null terminator ('\0') or until i is equal to n. 
+Once all characters are copied, it appends a null terminator to dest and returns the dest pointer.
