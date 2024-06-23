@@ -1,0 +1,21 @@
+The ft_atoi function converts a string str to an integer, handling optional leading whitespace and signs.
+
+    Initialization:
+        i is the index for iterating through the string.
+        res stores the resulting integer.
+        sign indicates the sign of the number, initialized to 1 for positive.
+
+    Skip Whitespace and Leading Characters:
+        The function skips any leading whitespace characters (' ', '\t', '\v', '\r', '\f', '\n') and the plus sign '+'.
+
+    Handle Negative Sign:
+        If a negative sign '-' is encountered, sign is set to -1.
+
+    Skip Additional Signs:
+        The function continues to skip any additional sign characters ('-' or '+').
+
+    Convert Characters to Integer:
+        The function then processes each numeric character ('0' to '9'), converting it to its corresponding integer value by subtracting '0' and adding it to res, which is scaled by 10 each iteration to build the complete number.
+
+    Return the Result:
+        Finally, the function returns the computed integer value, res, multiplied by the sign to account for any negative sign.
